@@ -4,17 +4,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f5f7;
+  background: #fce4ec; /* Fundo rosa bem claro */
   color: #1d1d1f;
 }
 .topo {
-  background: #00537a;
+  background: #e91e63; /* Rosa vibrante (principal) */
   color: white;
   padding: 40px 24px;
   text-align: center;
 }
 .topo button {
-  background: #e6007e;
+  background: #c2185b; /* Rosa mais escuro para destaque no botão */
   color: white;
   border: none;
   padding: 12px 18px;
@@ -35,26 +35,26 @@ body {
   gap: 16px;
 }
 .card {
-  border: 1px solid #ddd;
+  border: 1px solid #f8bbd0; /* Borda levemente rosada */
   padding: 18px;
   border-radius: 10px;
   background: #ffffff;
 }
 
-orm {
+form {
   display: grid;
   gap: 10px;
 }
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f8bbd0; /* Bordas dos inputs combinando com os cards */
   border-radius: 8px;
 }
 form button {
   width: fit-content;
   padding: 10px 16px;
-  background: #00537a;
+  background: #e91e63; /* Rosa principal no botão do formulário */
   color: white;
   border: none;
   border-radius: 8px;
