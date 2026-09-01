@@ -5,13 +5,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fce4ec; 
+  background: #fce4ec;
   color: #1d1d1f;
 }
 
 
 .topo {
-  
   background: linear-gradient(135deg, #e91e63, #ff4081); 
   /* Sombra para dar profundidade e separar do conteúdo */
   box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4); 
@@ -21,7 +20,7 @@ body {
 }
 
 .topo button {
-  background: #c2185b; 
+  background: #c2185b;
   color: white;
   border: none;
   padding: 12px 18px;
@@ -55,7 +54,7 @@ body {
 }
 
 .card {
-  border: 1px solid #f8bbd0; 
+  border: 1px solid #f8bbd0;
   padding: 18px;
   border-radius: 10px;
   background: #ffffff;
@@ -69,7 +68,7 @@ form {
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #f8bbd0;
+  border: 1px solid #f8bbd0; /* Bordas dos inputs combinando com os cards */
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s ease;
@@ -82,7 +81,7 @@ input:focus, textarea:focus {
 form button {
   width: fit-content;
   padding: 10px 16px;
-  background: #e91e63; 
+  background: #e91e63; /* Rosa principal no botão do formulário */
   color: white;
   border: none;
   border-radius: 8px;
@@ -96,7 +95,5 @@ form button:hover {
 }
 
 @media (max-width: 700px) {
-  .cards { 
-    grid-template-columns: 1fr; 
-  }
+  .cards { grid-template-columns: 1fr; }
 }
