@@ -1,26 +1,43 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fce4ec; /* Fundo rosa bem claro */
+  background: #fce4ec; 
   color: #1d1d1f;
 }
+
+
 .topo {
-  background: #e91e63; /* Rosa vibrante (principal) */
+  
+  background: linear-gradient(135deg, #e91e63, #ff4081); 
+  /* Sombra para dar profundidade e separar do conteúdo */
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4); 
   color: white;
   padding: 40px 24px;
   text-align: center;
 }
+
 .topo button {
-  background: #c2185b; /* Rosa mais escuro para destaque no botão */
+  background: #c2185b; 
   color: white;
   border: none;
   padding: 12px 18px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(194, 24, 91, 0.4);
+  transition: all 0.3s ease; 
 }
+
+.topo button:hover {
+  background: #880e4f;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(194, 24, 91, 0.6); 
+}
+
 
 .secao {
   width: min(1000px, 92%);
@@ -28,14 +45,17 @@ body {
   background: white;
   padding: 24px;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+
 .card {
-  border: 1px solid #f8bbd0; /* Borda levemente rosada */
+  border: 1px solid #f8bbd0; 
   padding: 18px;
   border-radius: 10px;
   background: #ffffff;
@@ -45,20 +65,38 @@ form {
   display: grid;
   gap: 10px;
 }
+
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #f8bbd0; /* Bordas dos inputs combinando com os cards */
+  border: 1px solid #f8bbd0;
   border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
+
+input:focus, textarea:focus {
+  border-color: #e91e63;
+}
+
 form button {
   width: fit-content;
   padding: 10px 16px;
-  background: #e91e63; /* Rosa principal no botão do formulário */
+  background: #e91e63; 
   color: white;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
+
+form button:hover {
+  background: #c2185b;
+}
+
 @media (max-width: 700px) {
-  .cards { grid-template-columns: 1fr; }
+  .cards { 
+    grid-template-columns: 1fr; 
+  }
 }
