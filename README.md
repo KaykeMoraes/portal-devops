@@ -24,11 +24,6 @@ O **Portal Acadêmico DevOps** é um projeto educacional que visa:
 - **Git**: Controle de versão e colaboração
 - **GitHub**: Gerenciamento de repositório e CI/CD
 
-### Composição do Repositório
-- CSS: 43.8%
-- HTML: 42.9%
-- JavaScript: 13.3%
-
 ## Equipe
 
 | Membro | Papel |
@@ -41,8 +36,8 @@ O **Portal Acadêmico DevOps** é um projeto educacional que visa:
 
 ## Histórico de Versões
 
-### v1.0.0 (Data de Lançamento)
-**Versão Inicial - MVP (Minimum Viable Product)**
+### v1.1.0
+**Versão de Melhoria - Documentação Aprimorada**
 
 #### Mudanças Principais
 - ✅ Estrutura base em HTML5 criada
@@ -52,24 +47,8 @@ O **Portal Acadêmico DevOps** é um projeto educacional que visa:
 - ✅ Documentação de projeto criada
 - ✅ Equipe definida e papéis atribuídos
 
-#### Commits Principais
-- Estrutura inicial do portal
-- Estilos base e tema visual
-- Scripts de interatividade
-- Configuração de deployment
-
-#### Melhorias Futuras
-- [ ] Otimização de performance
-- [ ] Responsividade mobile aprimorada
-- [ ] Mais funcionalidades dinâmicas
-- [ ] Testes automatizados
-
 ## Links Úteis
 
 - 🌐 [Portal ao Vivo](https://kaykemoraes.github.io/portal-devops/)
 - 📖 [Repositório GitHub](https://github.com/KaykeMoraes/portal-devops)
 - 💬 [Discussões do Projeto](https://github.com/KaykeMoraes/portal-devops/discussions)
-
----
-
-**Desenvolvido com ❤️ em colaboração**
