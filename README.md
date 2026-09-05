@@ -52,7 +52,3 @@ O **Portal Acadêmico DevOps** é um projeto educacional que visa:
 - 🌐 [Portal ao Vivo](https://kaykemoraes.github.io/portal-devops/)
 - 📖 [Repositório GitHub](https://github.com/KaykeMoraes/portal-devops)
 - 💬 [Discussões do Projeto](https://github.com/KaykeMoraes/portal-devops/discussions)
-
----
-
-**Desenvolvido com ❤️ em colaboração**
