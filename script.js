@@ -1,39 +1,49 @@
 const botaoDestaque = document.querySelector("#botaoDestaque");
 const servicos = document.querySelector("#servicos");
-const formContato = document.querySelector("#formContato");
+const formMatricula = document.querySelector("#formMatricula");
 const resposta = document.querySelector("#resposta");
 const inputNome = document.querySelector("#nome");
-const botaoEnviar = formContato.querySelector("button[type='submit']") || formContato.querySelector("button");
 
-botaoDestaque.addEventListener("click", () => {
-  servicos.scrollIntoView({ behavior: "smooth" });
-});
+// Botão de Tema Escuro
+const botaoTema = document.querySelector("#botaoTema");
+if (botaoTema) {
+  botaoTema.addEventListener("click", () => {
+    document.body.classList.toggle("tema-escuro"); 
+  });
+}
 
-formContato.addEventListener("submit", (evento) => {
-  evento.preventDefault();
-  
-  const nome = inputNome.value.trim();
+if (botaoDestaque && servicos) {
+  botaoDestaque.addEventListener("click", () => {
+    servicos.scrollIntoView({ behavior: "smooth" });
+  });
+}
 
-  if (nome === "") {
-    resposta.style.color = "red";
-    resposta.textContent = "Por favor, preencha o seu nome antes de enviar.";
-    inputNome.focus();
-    return;
-  }
+if (formMatricula) {
+  const botaoEnviar = formMatricula.querySelector("button[type='submit']") || formMatricula.querySelector("button");
 
-  // Feedback visual de carregamento no botão
-  const textoOriginal = botaoEnviar.textContent;
-  botaoEnviar.disabled = true;
-  botaoEnviar.textContent = "Enviando...";
-
-  // Simula um envio assíncrono (como uma requisição de API)
-  setTimeout(() => {
-    resposta.style.color = ""; 
-    resposta.textContent = `Obrigado pelo contato, ${nome}! Retornaremos em breve.`;
-    formContato.reset();
+  formMatricula.addEventListener("submit", (evento) => {
+    evento.preventDefault();
     
-    // Restaura o botão
-    botaoEnviar.disabled = false;
-    botaoEnviar.textContent = textoOriginal;
-  }, 1000);
-});
+    const nome = inputNome.value.trim();
+
+    if (nome === "") {
+      resposta.style.color = "red";
+      resposta.textContent = "Por favor, preencha o seu nome para iniciar a matrícula.";
+      inputNome.focus();
+      return;
+    }
+
+    const textoOriginal = botaoEnviar.textContent;
+    botaoEnviar.disabled = true;
+    botaoEnviar.textContent = "Processando matrícula...";
+
+    setTimeout(() => {
+      resposta.style.color = "green";
+      resposta.textContent = `Matrícula solicitada com sucesso, ${nome}! Entraremos em contato com os próximos passos.`;
+      formMatricula.reset();
+      
+      botaoEnviar.disabled = false;
+      botaoEnviar.textContent = textoOriginal;
+    }, 1000);
+  });
+}
